@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA","file":"src.9ad09f98.css","sourceRoot":"..\\src","sourcesContent":["textarea {\r\n\twidth:100%;\r\n}\r\n.hidden {\r\n\tdisplay: none;\r\n}\r\n.visible {\r\n\tdisplay: block;\r\n}"]}

@@ -1,0 +1,33 @@
+<html lang="uk">
+    <head>
+        <title>Налаштування ФТП </title>
+        <link rel="stylesheet" href="/src.9ad09f98.css">
+        <script src="/src.77de5100.js"></script>
+    <script src="/src.9ad09f98.js"></script></head>
+    <body>
+        <form name="main_form">
+            <p>Введіть список користувачів у наступному форматі:</p>
+            <p>Група	Прізвище	Ім'я	По батькові (якщо існує)	Email (якщо уже був згенерований)	Пароль (якщо уже був згенерований)</p>
+            <p>Усі значення мають бути розділені TAB (табом)</p>
+			<p>Якщо деякі користувачі уже мають імейли та паролі, то вони мають бути додані <b>в кінець списку</b>. Нові користувачі додаються на початок списку.</p>
+            <textarea rows="10" name="users">Група1 	Іванчук	Іван
+Група1 	Іванчук	Іван
+Група1	Петренко	Петро
+Група2	Григоренко	Григорій</textarea>
+			Домен імейла: <input name="domain" type="text" value="rst.if.ua">
+			<br>
+			<br>
+			<br>
+            <button id="generateButton" onclick="return false">Згенерувати</button>
+        </form>
+		<div id="badlinesroot" class="hidden">
+			<p>"Погані" рядки</p>
+			<div id="badlines">
+			</div>
+		</div>
+        <div id="results" class="hidden">
+            <p><label for="generatedUsernames">Список користувачів та логінів:</label></p>
+            <textarea rows="10" id="generatedUsernames"></textarea>
+        </div>
+    </body>
+</html>
